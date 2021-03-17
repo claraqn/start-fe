@@ -1,11 +1,11 @@
 
 
 
-// var imMan = true; // bool
-// var isMan = 'true'; // string
+var imMan = true; // bool
+var isMan = 'true'; // string
 
-// console.log(imMan);
-// console.log(isMan);
+console.log(imMan);
+console.log(isMan);
 
 
 // var log = function(str){
@@ -51,6 +51,18 @@
 //     console.log('hero');
 // }
 
-console.log(typeof 1); //number
-console.log(typeof []); //object
-console.log(typeof {}); //object ->배열은 객체 안에 포함되기 때문
+// console.log(typeof 1); //number
+// console.log(typeof []); //object
+// console.log(typeof {}); //object ->배열은 객체 안에 포함되기 때문
+
+// Car.prototype.start = function() {
+//     console.log('시동 걸림');
+//     this.isStart = true;
+//   };
+// Car.prototype.move = function(speed) {
+//     if (!this.isStart) {
+//       console.log('시동을 걸어주세요!');
+//       return;
+//     }
+//     console.log(this.model + ' : ' + speed + 'km');
+// };
