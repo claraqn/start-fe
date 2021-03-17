@@ -66,3 +66,4 @@ console.log(isMan);
 //     }
 //     console.log(this.model + ' : ' + speed + 'km');
 // };
+

@@ -112,8 +112,83 @@
 
 // test.prototype; //prototype객체를 가르킴
 
-var text = 'abc def ghi jkl abc def'; // 대상 문자열
-var testReg = /abc/; // 찾을 문자열
-var result = testReg.test(text);
+// var text = 'abc def ghi jkl abc def'; // 대상 문자열
+// var testReg = /abc/; // 찾을 문자열
+// var result = testReg.test(text);
 
-console.log(result); // true
+// console.log(result); // true
+
+
+// var count = [10,20,30,40,50,60,70,100];
+// var counts=0;
+// for(var a=0; a<count.length; a++){
+//     counts+=count[a];
+// }
+// var average=counts/count.length;
+// console.log(average);
+
+// for(var a=1; a<10; a++){
+//     for(var b=1; b<10; b++){
+//         console.log(a+'*'+b+'='+a*b)
+//     }
+// }
+
+// var mul=function(a,b){
+//     return a*b;
+// }
+
+// for(var a=1; a<10; a++){
+//     for(var b=1; b<10; b++){
+//         console.log(a+'*'+b+'='+mul(a,b))
+//     }
+// }
+
+// var student = {
+//     studying: function() { //메소드임(함수가 객체에 붙어있으면 메소드)
+//       console.log('studying..');
+//     },
+//   };
+  
+//   student.studying();
+
+
+// var nums = new Array(); 
+// do { 
+//     input = prompt("숫자 입력"); 
+//     nums.push(input); 
+// } while (input != null); 
+// nums.pop(); // 마지막꺼 제거 취소 버튼 누르면서 null값이 들어감 
+
+
+// function sum(array){
+//     var sum = 0;
+//     for (var i=0; i<array.length; i++) { 
+//         sum+=array[i];
+//     }
+//     return sum;
+// }
+
+// console.log(sum(nums));
+
+function sum() {
+
+    var numbers = new Array();
+  
+    while (true) {
+  
+      var value = prompt("숫자를 입력해 주세요.");
+  
+      // 입력받는 것 stop
+      if (value === null) break;
+  
+      numbers.push(parseInt(value));
+    }
+  
+    var sum = 0;
+    for (var number of numbers) {
+      sum += number;
+    }
+    return sum;
+}
+  
+alert( sum() );
