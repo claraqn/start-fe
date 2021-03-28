@@ -170,25 +170,32 @@
 
 // console.log(sum(nums));
 
-function sum() {
+// function sum() {
 
-    var numbers = new Array();
+//     var numbers = new Array();
   
-    while (true) {
+//     while (true) {
   
-      var value = prompt("숫자를 입력해 주세요.");
+//       var value = prompt("숫자를 입력해 주세요.");
   
-      // 입력받는 것 stop
-      if (value === null) break;
+//       // 입력받는 것 stop
+//       if (value === null) break;
   
-      numbers.push(parseInt(value));
-    }
+//       numbers.push(parseInt(value));
+//     }
   
-    var sum = 0;
-    for (var number of numbers) {
-      sum += number;
-    }
-    return sum;
+//     var sum = 0;
+//     for (var number of numbers) {
+//       sum += number;
+//     }
+//     return sum;
+// }
+  
+// alert( sum() );
+
+var num=0;
+var sum=0;
+while((num = prompt("숫자를 입력하세요")) !== '') {
+    sum += parseInt(num);
 }
-  
-alert( sum() );
+alert(`합은 ${sum}`);
