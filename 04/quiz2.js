@@ -23,11 +23,15 @@ function printBoards() {
 }
 
 function select(event) {
+  //다시 여기로 들어왔을 때 밑에 클래스가 추가된 el이 복사된 $select가 들어올것
+  //그 $select는 다른 사각형이 클릭되면 사라져야 하므로 if 문 안의 코드로 삭제시킴
   if ($select) {
+    //추가되었던 select 클래스를 공백으로 replace
     $select.className = $select.className.replace(' select', '');
   }
   var el = event.currentTarget;
   el.className += ' select';
+  //select 클래스가 추가된 el 을 $select에 저장
   $select = el;
 }
 
