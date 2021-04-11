@@ -9,6 +9,7 @@ let el = "";
 function mousedown(app){
     app.addEventListener('mousedown',(event)=>{
         isDown = true;
+        // 박스가 2개 이므로 지정한 박스로 값을 넣어줘야 함.
         el = app;
         x=app.offsetLeft-event.clientX;
         y=app.offsetTop-event.clientY;
