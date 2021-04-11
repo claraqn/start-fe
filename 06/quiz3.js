@@ -58,7 +58,7 @@ function togglebtn(){
     const toggle_btn = document.querySelector('.toggle-btn');
     toggle_btn.addEventListener('click', function(){
         const box = document.querySelectorAll('.box');
-        if(box[0].style.visibility == 'visible'){
+        if(box[0].style.visibility === 'visible'){ // 3개 써주는것이 좋음!(값,문자형 다 같은 것)
             for(i=0; i<box.length; i++){
                 box[i].style.visibility = 'hidden';
             }
