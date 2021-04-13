@@ -38,14 +38,13 @@
 // var a = [1];
 // var b = a;
 // b[0] = [2];
-// console.log(a, b); 
+// console.log(a, b);
 
 // //얘도 참조
 // var a = { x: 1 };
 // var b = a;
 // b.x = 2;
 // console.log(a, b);
-
 
 // var isMan= true;
 // if(isMan){
@@ -86,13 +85,13 @@
 // }
 // console.log(sum(1,2));
 
-//// 익명 함수표현식
+/// / 익명 함수표현식
 // var car = function() {
 //     //코드
 //   };
-  
+
 //   //중첩함수
-  
+
 //   // 익명 즉시실행함수, 스코프 보호
 //   (function() {
 //     //코드
@@ -117,7 +116,6 @@
 // var result = testReg.test(text);
 
 // console.log(result); // true
-
 
 // var count = [10,20,30,40,50,60,70,100];
 // var counts=0;
@@ -148,21 +146,19 @@
 //       console.log('studying..');
 //     },
 //   };
-  
+
 //   student.studying();
 
-
-// var nums = new Array(); 
-// do { 
-//     input = prompt("숫자 입력"); 
-//     nums.push(input); 
-// } while (input != null); 
-// nums.pop(); // 마지막꺼 제거 취소 버튼 누르면서 null값이 들어감 
-
+// var nums = new Array();
+// do {
+//     input = prompt("숫자 입력");
+//     nums.push(input);
+// } while (input != null);
+// nums.pop(); // 마지막꺼 제거 취소 버튼 누르면서 null값이 들어감
 
 // function sum(array){
 //     var sum = 0;
-//     for (var i=0; i<array.length; i++) { 
+//     for (var i=0; i<array.length; i++) {
 //         sum+=array[i];
 //     }
 //     return sum;
@@ -173,29 +169,33 @@
 // function sum() {
 
 //     var numbers = new Array();
-  
+
 //     while (true) {
-  
+
 //       var value = prompt("숫자를 입력해 주세요.");
-  
+
 //       // 입력받는 것 stop
 //       if (value === null) break;
-  
+
 //       numbers.push(parseInt(value));
 //     }
-  
+
 //     var sum = 0;
 //     for (var number of numbers) {
 //       sum += number;
 //     }
 //     return sum;
 // }
-  
+
 // alert( sum() );
 
-var num=0;
-var sum=0;
-while((num = prompt("숫자를 입력하세요")) !== '') {
-    sum += parseInt(num);
+let num = 0;
+let sum = 0;
+// eslint-disable-next-line no-cond-assign
+// eslint-disable-next-line no-alert
+while ((num = prompt('숫자를 입력하세요')) !== '') {
+  // eslint-disable-next-line radix
+  sum += parseInt(num);
 }
+// eslint-disable-next-line no-alert
 alert(`합은 ${sum}`);

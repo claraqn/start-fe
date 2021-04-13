@@ -1,8 +1,13 @@
 const a = 3;
 const b = 4;
-console.log(b);
 const c = 5;
 
+// eslint-disable-next-line no-console
+console.log(b);
+// eslint-disable-next-line no-console
+console.log(a);
+// eslint-disable-next-line no-console
+console.log(c);
 // const a = {
 //   hello: 1,
 //   what: 4,

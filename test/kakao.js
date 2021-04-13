@@ -6,12 +6,13 @@ const headers = { Authorization: 'KakaoAK 9ac229859e9b13e1667fdaba85d84ce7' };
 
 function success(data) {
   const { documents } = data;
+  // eslint-disable-next-line arrow-body-style
   const li = documents.map((doc) => {
     return `<li class="list-group-item"><a href="${doc.url}" target="_blank">${doc.contents}</a></li>`;
   });
 
   $result.innerHTML = `<ul class="list-group list-group-flush">${li.join(
-    '',
+    ''
   )}</ul>`;
 }
 function error() {

@@ -1,12 +1,10 @@
+const imMan = true; // bool
+const isMan = 'true'; // string
 
-
-
-var imMan = true; // bool
-var isMan = 'true'; // string
-
+// eslint-disable-next-line no-console
 console.log(imMan);
+// eslint-disable-next-line no-console
 console.log(isMan);
-
 
 // var log = function(str){
 //     console.log(str);
@@ -66,4 +64,3 @@ console.log(isMan);
 //     }
 //     console.log(this.model + ' : ' + speed + 'km');
 // };
-

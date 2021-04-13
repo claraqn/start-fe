@@ -9,7 +9,6 @@
 
 // navigator.userAgent();
 
-
 // var a = document.getElementById('debug');
 // console.log(a);
 
@@ -26,19 +25,18 @@
 // div.innerHTML = 'Hello';
 // console.log(div);
 
-
 // var div2=document.body.appendChild(div);
 // console.log(div2);
 
 // const span = document.createElement('span');
-// const textNode = document.createTextNode('hello!'); 
+// const textNode = document.createTextNode('hello!');
 // span.appendChild(textNode);
 // document.querySelector('#debug').appendChild(span);
 
 // var debug = document.getElementById('debug');
 // debug.remove();
 
-// const list = document.getElementById('list'); 
+// const list = document.getElementById('list');
 // list.removeChild(list.children[0]);
 
 // document.body.addEventListener('click', function(){ // body영역을 클릭하면 'click' 출력
@@ -48,7 +46,6 @@
 // function clickBody(){
 //     console.log('click');
 // }
-
 
 // document.querySelector('.box').addEventListener('click', clickBody);
 
@@ -61,7 +58,6 @@
 
 // var list = document.querySelector('#list');
 // console.log(list.children);
-
 
 // for(var i=0; i<list.children.lengh; i++){
 //     console.log(list.childern[i]);
@@ -84,9 +80,11 @@
 //     console.log('body');
 // });
 
-var link=document.querySelector('#link');
-link.addEventListener('click', function(){
-    console.log(1111111);
-    // event.stopPropagation();
-    event.preventDefault(); //페이지 이동하지 않음
+const link = document.querySelector('#link');
+link.addEventListener('click', () => {
+  // eslint-disable-next-line no-console
+  console.log(1111111);
+  // event.stopPropagation();
+  // eslint-disable-next-line no-restricted-globals
+  event.preventDefault(); // 페이지 이동하지 않음
 });

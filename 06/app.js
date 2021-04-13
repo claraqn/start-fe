@@ -3,7 +3,6 @@
 // // b="1"; //값 바뀌지 않음!(오류남)
 // console.log(b);
 
-
 // function sum(x,y=1){
 //     return x+y;
 // }
@@ -17,7 +16,7 @@
 // const newArr = arr.map((item)=>item+1);
 // console.log(newArr);
 
-// document   
+// document
 //     .getElementById('box')
 //     .addEventListener('click', (event) => console.log(1));
 
@@ -74,7 +73,6 @@
 //   name,
 // };
 
-
 // const student = {
 //   number,
 //   // playGame:function(){
@@ -83,7 +81,6 @@
 //     console.log('play');
 //   },
 // };
-
 
 // var promise1 = new Promise(function(resolve, reject) {
 //     setTimeout(function() {
@@ -94,10 +91,12 @@
 // const cp = 'ssully';
 // const url = `https://1boon.kakao.com/${cp}`;
 // console.log(url);
-let arr = ["Bora", "Lee"]
+const arr = ['Bora', 'Lee'];
 
-let [firstName, surname] = arr;
+const [firstName, surname] = arr;
 
+// eslint-disable-next-line no-alert
 alert(firstName); // Bora
 
+// eslint-disable-next-line no-alert
 alert(surname); // Lee
