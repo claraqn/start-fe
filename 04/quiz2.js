@@ -17,6 +17,7 @@ function printBoards() {
     isWhite = !isWhite;
 
     if (i % boardLineCount === boardLineCount - 1) {
+      // 0,1,2,3 이후 검흰 순서 바뀌는 것
       isWhite = !isWhite;
     }
   }
@@ -39,6 +40,8 @@ function select(event) {
 function addEvent() {
   const $boards = document.querySelectorAll('span');
   const boardsLength = $boards.length;
+  // eslint-disable-next-line no-console
+  console.log(boardsLength);
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < boardsLength; i++) {
     $boards[i].addEventListener('click', select);
