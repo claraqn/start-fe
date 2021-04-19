@@ -12,6 +12,7 @@ $box.addEventListener('mousedown', (event) => {
 document.body.addEventListener('mousemove', (event) => {
   // body안에서 box 자유롭게 움직임
   // if문안에 true 일때 return 실행, flase일때 return 말고 밑에 코드 진행
+  // box 클릭하면 isDown=true이므로 if 문 안이 false가 됨 -> 밑에 코드 진행
   if (!isDown) return;
   // event.clientX -> 사용자가 선택한 좌표 X값
   // event.clientY -> 사용자가 선택한 좌표 Y값
