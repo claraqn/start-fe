@@ -3,6 +3,7 @@ let $select = null;
 function printBoards() {
   const $board = document.getElementById('board');
   const boardCount = 16;
+  // iswhite = true 이면 흰,검 순서 바뀌어서 나옴
   let isWhite = false;
   let className = '';
   const boardLineCount = 4;
