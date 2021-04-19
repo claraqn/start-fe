@@ -32,8 +32,8 @@ const result = document.querySelector('#result');
 function multi() {
   // parseInt 두번째 인자에 10진수라는 뜻의 10을 적어주어야 함
   const fNum = parseInt(num.value, 10);
-  // f_result을 전역으로 빼면 구구단이 초기화되지 않고 계속 추가됨
-  // const f_result = [];
+  // testresult를 전역으로 빼면 구구단이 초기화되지 않고 계속 추가됨
+  // const testresult = [];
   // let은 변수에 재할당이 가능하지만,const는 변수 재선언, 재할당 모두 불가능하다.
   // testresult 은 concat 사용을 const 로 선언하면 안됨 let 사용
   let testresult = [];

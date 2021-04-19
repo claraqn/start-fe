@@ -44,6 +44,7 @@ function clickbox() {
     // eslint-disable-next-line no-alert
     // alert은 사용성이 떨어져서 쓰지말라고 하는 룰임!
     // 사용성이 떨어지는 이유 = alert 쓰면 시스템이 멈추기 때문
+    // eslint-disable-next-line no-alert
     alert('gameover');
     // clear timerId를 통해 움직이는 bug를 멈춰줌(게임종료)
     clearInterval(timerId);
