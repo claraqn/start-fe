@@ -59,6 +59,8 @@ const $btnNext = document.querySelector('.btn-next');
 const $page = document.querySelector('.page');
 const $totalPage = document.querySelector('.total-page');
 
+console.log(todayPhoto[0].title);
+
 function prev() {
   if (page === 1) return; // page가 0이 되는것을 막는 것
   // eslint-disable-next-line no-plusplus
@@ -96,6 +98,7 @@ function printImg(page) {
     // 한 페이지에 보여질,,
     if (todayPhoto[i]) {
       str += `<img src="${todayPhoto[i].img}"> `;
+      // console.log(todayPhoto[i].title);
     }
   }
 
