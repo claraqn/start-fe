@@ -21,6 +21,7 @@ function error() {
 }
 function search() {
   const { value } = $text;
+  // const value = $text;
 
   if (value === '') {
     // eslint-disable-next-line no-alert
