@@ -17,3 +17,21 @@ module.exports = {
     }),
   ],
 };
+
+module.exports = {
+  mode: 'development',
+  entry: './src/quiz.js',
+  output: {
+    filename: 'app2.js',
+    // path: path.resolve(__dirname, 'dist'),
+    path: `${__dirname}/dist`,
+  },
+  devServer: {
+    contentBase: './dist',
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/quiz.html',
+    }),
+  ],
+};

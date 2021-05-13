@@ -2,7 +2,7 @@ import sum from './sum';
 
 // console.log(sum(11, 2));
 
-document.getElementById('debug').innerHTML = sum(100, 2);
+document.getElementById('debug').innerHTML = sum(100, 4);
 
 // 숫자 바뀌면 npx webpack 해줘야함
 // 번거로운 과정이기 때문에 package.json build 부분 바꿔주고

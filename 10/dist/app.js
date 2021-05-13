@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log(1+2)})();
+(()=>{"use strict";document.getElementById("debug").innerHTML=100+2})();
