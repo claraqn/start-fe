@@ -2,10 +2,12 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    es6: true,
   },
   extends: ['eslint:recommended', 'airbnb-base', 'prettier'],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 9,
+    //ecmaVersion 2018=9
     sourceType: 'module',
   },
   rules: {
