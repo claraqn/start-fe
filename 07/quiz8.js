@@ -7,28 +7,28 @@ let count = 0;
 let randomNumber = 0;
 
 function ranNum() {
-  const fMin = parseInt(min.value, 10);
-  const fMax = parseInt(max.value, 10);
-  console.log(fMin);
-  console.log(fMax);
-  randomNumber = Math.floor(Math.random() * (fMax - fMin) + fMin);
+    const fMin = parseInt(min.value, 10);
+    const fMax = parseInt(max.value, 10);
+    console.log(fMin);
+    console.log(fMax);
+    randomNumber = Math.floor(Math.random() * (fMax - fMin) + fMin);
 }
 
 function disNum() {
-  if (count < randomNumber) {
-    console.log(randomNumber);
-    count += 1;
-    box.innerHTML = count;
-    btn.disabled = true;
-  } else if (count > randomNumber) {
-    console.log(randomNumber);
-    count -= 1;
-    box.innerHTML = count;
-    btn.disabled = true;
-  } else {
-    // ranNum 함수가 실행되지 않는다고 가정하면 count===randomNumber 이니까 아무것도 실행되지 않음
-    btn.disabled = false;
-  }
+    if (count < randomNumber) {
+        console.log(randomNumber);
+        count += 1;
+        box.innerHTML = count;
+        btn.disabled = true;
+    } else if (count > randomNumber) {
+        console.log(randomNumber);
+        count -= 1;
+        box.innerHTML = count;
+        btn.disabled = true;
+    } else {
+        // ranNum 함수가 실행되지 않는다고 가정하면 count===randomNumber 이니까 아무것도 실행되지 않음
+        btn.disabled = false;
+    }
 }
 
 console.log(randomNumber); // 이건 0이 나옴 밑에 함수 실행되기 전이므로

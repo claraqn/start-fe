@@ -1,4 +1,4 @@
-import { minus, plus, avg, ran } from './quizmod';
+import {minus, plus, avg, ran} from './quizmod';
 
 document.getElementById('minus').innerHTML = minus(100, 2);
 document.getElementById('plus').innerHTML = plus(20, 20);

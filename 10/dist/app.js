@@ -1,1 +1,4 @@
-(()=>{"use strict";document.getElementById("debug").innerHTML=100+2})();
+(() => {
+    "use strict";
+    document.getElementById("debug").innerHTML = 100 + 2
+})();

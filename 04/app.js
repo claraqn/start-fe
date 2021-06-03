@@ -82,9 +82,9 @@
 
 const link = document.querySelector('#link');
 link.addEventListener('click', () => {
-  // eslint-disable-next-line no-console
-  console.log(1111111);
-  // event.stopPropagation();
-  // eslint-disable-next-line no-restricted-globals
-  event.preventDefault(); // 페이지 이동하지 않음
+    // eslint-disable-next-line no-console
+    console.log(1111111);
+    // event.stopPropagation();
+    // eslint-disable-next-line no-restricted-globals
+    event.preventDefault(); // 페이지 이동하지 않음
 });

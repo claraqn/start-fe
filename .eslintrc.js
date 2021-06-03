@@ -13,4 +13,8 @@ module.exports = {
     'no-var': 'warn',
     'linebreak-style': 0,
   },
+  globals: {
+    React: true,
+    ReactDOM: true,
+  },
 };

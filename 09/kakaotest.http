@@ -1,4 +1,4 @@
-GET https://dapi.kakao.com/v2/search/web?query=kakao 
+GET https://dapi.kakao.com/v2/search/web?query=kakao
 content-type: application/json
 
 {

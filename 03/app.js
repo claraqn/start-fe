@@ -194,8 +194,8 @@ let sum = 0;
 // eslint-disable-next-line no-cond-assign
 // eslint-disable-next-line no-alert
 while ((num = prompt('숫자를 입력하세요')) !== '') {
-  // eslint-disable-next-line radix
-  sum += parseInt(num);
+    // eslint-disable-next-line radix
+    sum += parseInt(num);
 }
 // eslint-disable-next-line no-alert
 alert(`합은 ${sum}`);
